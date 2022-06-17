@@ -1,0 +1,46 @@
+
+/* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    font-size: 16px;
+}
+@media only screen {
+    body{
+        background-color: hsl(0, 100%, 74%);
+        background-image: url(assent/images/bg-intro-desktop.png);
+    }   */
+/* body {
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+} */
+
+/* div#container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#container section {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 1440px;
+    overflow: hidden;
+}
+
+div#container section article {
+    width: 45%;
+}
+
+div#container section aside {
+    width: 55%;
+} */
