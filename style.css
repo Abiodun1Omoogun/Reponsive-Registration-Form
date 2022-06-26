@@ -1,46 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap')
 
-/* {
+*{
     margin: 0;
     padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    font-family: poppins;
-    font-size: 16px;
+    box-sizing: border-box
 }
-@media only screen {
-    body{
-        background-color: hsl(0, 100%, 74%);
-        background-image: url(assent/images/bg-intro-desktop.png);
-    }   */
-/* body {
-   
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-} */
 
-/* div#container {
-    width: 100%;
-    min-height: 100vh;
+body {
     background-color: hsl(0, 100%, 74%);
+    background-image: url('bg-intro-desktop.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: ;
+    border: 15px;
+}
+
+#container {
+    /* width: 100%; */
+    max-width: 1440px;
+    min-height: 600px;
+    /* background-color: hsl(0, 100%, 74%); */
     display: flex;
+    height: auto;
+    /* padding: 20px; */
     justify-content: center;
     align-items: center;
 }
 
-div#container section {
+#container section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 85%;
-    max-width: 1440px;
+    max-width:  500px;
     overflow: hidden;
 }
 
-div#container section article {
+#container section article {
     width: 45%;
+    /* padding: 15px; */
+    place-items: center;
 }
 
-div#container section aside {
+#container section aside {
     width: 55%;
-} */
+    /* justify-content: space-around; */
+
+}
+#container section article h3{
+    color: #fff;
+    justify-content: center;
+}
+#container section article p{
+    color: #fff;
+}
+.inner{
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.btn1{
+   color: #fff;
+  background-color: hsl(248, 32%, 49%); 
+  text-align: center;
+}
+.btn2{
+    color: #fff;
+   background-color: hsl(154, 59%, 51%);
+   text-align: center;
+}
+
+
+
+
+ 
+@media only screen (max-width: 375px) {
+    /* body{
+        
+    } */
+    
+      
+
+
+} 
+ 
+    
+
+    /* body{
+       margin: 0;
+       padding: 0;
+       outline: 0;
+       box-sizing: border-box;
+       font-family: poppins, sans-serif;
+       font-size: 16px;
+   }  */
