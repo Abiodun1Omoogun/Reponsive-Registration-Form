@@ -107,6 +107,9 @@ small a{
 
  /* Mobile styling */
  @media screen and (max-width: 375px) {
+    body{
+        background-image: url('./bg-intro-mobile.png');
+    }
     h1{
         font-size: 30px;
         text-align: center;
