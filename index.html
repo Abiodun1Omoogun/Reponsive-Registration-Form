@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Form</title>\
+    <link rel="icon" type="/png" sizes="32x32" href="./favicon-32x32 (1).png">
+    <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -17,7 +18,7 @@
             Watching scripted tutorials is great, but understanding how 
             developers think is invaluable.
           </p>
-     </div>  
+      </div>  
         
         <!-- Right section of responsive registration form -->
       <div>
@@ -25,40 +26,44 @@
           <p>
            <strong>Try it free 7days</strong> then $20/mon, thereafter
           </p>
-         </div>
+        </div>
          
-         <form class="box">
+        <form class="box" id="form">
           <div class="form-control">
             <input
               type="text"
               id="First Name"
               placeholder="First Name"
-              required
             />
+            <img src="./icon-error.svg" alt="error-icon" />
+            <small></small>
           </div>
           <div class="form-control">
             <input
               type="text"
               id="Last Name"
               placeholder="Last Name"
-              required
             />
-          </div class="form-control">
-          <div>
-            <input
-              type="text"
-              id="Email Address"
-              placeholder="Email Address"
-              required
-            />
+            <img src="./icon-error.svg" alt="error-icon" />
+            <small></small>
           </div>
           <div class="form-control">
             <input
-              type="text"
+              type="email"
+              id="Email Address"
+              placeholder="Email Address"
+            />
+            <img src="./icon-error.svg" alt="error-icon" />
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input
+              type="Password"
               id="Password"
               placeholder="Password"
-              required
             />
+            <img src="./icon-error.svg" alt="error-icon" />
+            <small></small>
           </div>
 
            <button type="submit">CLAIM YOUR FREE TRIAL</button>
@@ -66,7 +71,10 @@
              By clicking the button, you are agreeing with our
              <a href target="_blank">Terms and Services</a> 
            </small>
+        </form>
       </div>    
-    </div>
+   </div>
+
+   <script src="scripts.js"></script>
   </body>
 </html>

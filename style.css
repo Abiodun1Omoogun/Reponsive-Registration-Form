@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap')
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 /* Desktop styling */
 *{
     box-sizing: border-box;
@@ -79,9 +78,42 @@ button{
     font-weight: 600;
     margin-top: 10px;
 }
-form-control{
+.form-control{
     position: relative;
     margin: 20px;
+}
+.form-control small{
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    opacity: 0;
+    right: 0;
+    bottom: -24px;
+    font-weight: 600;
+    position: absolute;
+}
+.form-control.error input{
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+.form-control.error input::placeholder {
+    color: hsl(0, 100%, 74%);
+}
+.form-control img{
+    opacity: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    height: 20px;
+}
+.form-control.error img{
+    opacity: 1;
+}
+.form-control small{
+    opacity: 0;
+}
+.form-control.error small{
+    opacity: 1;
 }
 button:focus{
     outline: none;
@@ -106,7 +138,7 @@ small a{
 
 
  /* Mobile styling */
- @media screen and (max-width: 375px) {
+ @media screen and (max-width: 768px) {
     body{
         background-image: url('./bg-intro-mobile.png');
     }
@@ -124,6 +156,13 @@ small a{
     input{
         width: 82%;
     }
+    button{
+        width: 87%;
+        margin: auto;
+    }
+    
+
+
 }     
       
 
